@@ -1,0 +1,19 @@
+#btn {
+  width: 180px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(0, 100%, 45%);
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px black;
+  font-weight: bold;
+  margin-left: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  #btn {
+    width: 220px;
+    margin: 15px 0 15px 0;
+  }
+}

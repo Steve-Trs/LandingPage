@@ -1,0 +1,156 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.brand {
+  display: flex;
+  width: 40%;
+  padding: 20px;
+  align-items: center;
+}
+.brand-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8em;
+  white-space: nowrap;
+}
+.logo {
+  min-width: 30px;
+  margin-right: 10px;
+  font-size: 1.5em;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(
+    115deg,
+    hsl(318, 100%, 70%),
+    hsl(282, 100%, 70%),
+    hsl(271, 100%, 55%)
+  );
+}
+.social-media {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.social-media span {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.social-icon {
+  margin-right: 5px;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 250px);
+  background: linear-gradient(
+    115deg,
+    hsl(318, 100%, 70%),
+    hsl(282, 100%, 50%),
+    hsl(271, 100%, 35%)
+  );
+}
+
+.pic-chef {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 450px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.text h2 {
+  font-size: 2em;
+  margin: 30px 0;
+}
+.text h3 {
+  font-size: 3em;
+  margin: 0;
+  color: white;
+}
+.text p {
+  color: white;
+}
+.form-container {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.chef-img {
+  width: 280px;
+  border-radius: 75px;
+  box-shadow: 0 5px 10px black;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .pic-chef {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+  .social-media {
+    display: none;
+  }
+  .brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    display: flex;
+    padding-top: 0;
+  }
+}
